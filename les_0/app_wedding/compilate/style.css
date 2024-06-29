@@ -1,0 +1,73 @@
+.bg {
+    background-color: #ffd1dc; /* Цвет фона для всей страницы */
+}
+
+/* styles.css */
+.upper_heading {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 35px;
+    font-family: Courier, monospace;
+    text-align: center;
+}
+
+.frame {
+    border: 10px solid #f0f0f0; /* Цвет рамки */
+    border-radius: 20px; /* Радиус скругления углов */
+    padding: 20px; /* Внутренний отступ */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Тень */
+    margin: 30px; /* Отступы от всех краев */
+}
+
+/* Добавляем кружевной узор */
+.frame::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-size: 20px 20px;
+    z-index: 1;
+}
+
+
+/* Стили для остальных записей в body */
+body p {
+    font-size: 18px; /* Размер шрифта 18 пикселей */
+    font-family: "Comic Sans MS", cursive; /* Шрифт Comic Sans MS */
+}html {
+  height: 100%;
+  width: 100%;
+}
+
+.photo-container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .photo {
+            width: 30%; /* Устанавливаем ширину каждой фотографии */
+            height: auto; /* Сохраняем пропорции изображения */
+            border: 2px solid white;
+        }
+        .photo_colors {
+            width: 50%; /* Устанавливаем ширину каждой фотографии */
+            height: auto; /* Сохраняем пропорции изображения */
+            border: 2px solid white;
+        }
+
+.end {
+    font-size: 13px; /* Размер шрифта 13 пикселей */
+    font-family: "Comic Sans MS", cursive; /* Шрифт Comic Sans MS */
+    text-align: center;
+}
+
+.photo-container-logo {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .logo {
+            width: 3%; /* Устанавливаем ширину */
+            height: auto; /* Сохраняем пропорции изображения */
+        }
